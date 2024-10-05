@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Joana Bureth</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5aa8bc0de3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./assets/logo_joana.png" class="logo" alt="logo_joana">
+                <ul id="sidemenu">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#about">A propos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Développeuse web et web mobile</p>
+                <h1>Hello, Je suis <span>Joana</span> Bureth <br/>Bienvenue sur mon portfolio</h1>
+            </div>
+        </div>
+    </div>
+<!-- ----------------------ABOUT-------------------->
+    <div id="about">
+        <div class="contaier">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/user.png" alt="photo Joana">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">A propos de moi</h1>
+                    <p>
+                        Bonjour, je m'appelle Joana Bureth et je suis actuellement en 2ème année de Bachelor en informatique à l'école de l’informatique et du numérique l’IPI. J'ai découvert le monde de l'informatique au détour d'un projet au lycée dont l'objectif était de créer un mini site. Je me suis prise de passion pour ce domaine, ce qui m'a conduit à vouloir en faire mon métier afin de devenir développeuse web.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')" >Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web development</span><br>Web App development</li>
+                            <li><span>App development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Bachelor 2</li>
+                            <li><span>2023 - 2024</span><br>Bachelor 1</li>
+                            <li><span>2022 - 2023</span><br>BAC</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025 - 2025</span><br>Bachelor 2 - Spécialisation en développement d’application, de logiciels et de sites web</li>
+                            <li><span>2023 - 2024</span><br>Bachelor 1 - socle de compétences en développement (algorithmes, code) et en infrastructures (administration système, bases de données)</li>
+                            <li><span>2022 - 2023</span><br>BAC Spécialité Physique Chimie SVT </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ----------------------SERVICES-------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Mes stacks</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designer</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos ipsum perspiciatis inventore cupiditate sed error enim ducimus non accusamus. Eos.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsum quisquam nihil tenetur consequuntur consequatur. Aliquam aperiam velit eum dolorum.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Designer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis itaque distinctio beatae repellat accusamus exercitationem voluptatem rem saepe fugiat dolorem?</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!-- ----------------------PORTFOLIO-------------------- -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Mes réalisations</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./assets/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, et quod reprehenderit laudantium eos rem in.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, et quod reprehenderit laudantium eos rem in.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                       
+                </div>
+                <div class="work">
+                    <img src="./assets/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, et quod reprehenderit laudantium eos rem in.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                        
+                </div>
+            </div>
+            <a href="#" class="btn">voir plus</a>
+        </div>
+     </div>
+
+ <!-- ----------------------CONTACT-------------------- -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> brth.joana@gmail.com</p>
+                    <p> <i class="fa-solid fa-square-phone"></i> 06.48.68.38.35</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/joana-bureth"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/fleur.dabricotier?utm_source=qr&igsh=M203YXRxMGk4bmpy"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    </div>
+                    <a href="./assets/CV_Joana_BURETH.pdf" download class="btn btn2">Mon CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Nom" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn2">Envoyer</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> DevJoanaBureth </p>
+        </div>
+
+     </div>
+
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
