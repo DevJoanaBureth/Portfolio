@@ -34,7 +34,7 @@ Je suis une jeune développeuse passionnée par le développement web et les tec
 
 ## 🚀 Déploiement
 
-Ce site est actuellement hébergé sur [GitHub Pages](devjoanabureth.github.io/Portfolio). Vous pouvez consulter mon portfolio en ligne via ce lien !
+Ce site est actuellement hébergé sur [GitHub Pages](https://devjoanabureth.github.io/Portfolio/). Vous pouvez consulter mon portfolio en ligne via ce lien !
 
 ## 📧 Contact
 
