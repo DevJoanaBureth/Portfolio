@@ -29,8 +29,8 @@ Je suis une jeune développeuse passionnée par le développement web et les tec
 - `app.js` : Fichier contenant le script JavaScript pour l'interactivité.
 - `assets/` : Dossier contenant les images et autre media pour le visuel.
 - `index.html` : Page principale de mon portfolio.
-- `style.css` : Fichier contenant le CSS pour le design.
 - `README.md` : Fichier contenant la description de mon projet, avec des captures d'écran et des liens.
+- `style.css` : Fichier contenant le CSS pour le design.
 
 ## 🚀 Déploiement
 
