@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes projets</title>
+    <link rel="stylesheet" href="./styles/projets.css">
+    <link rel="shortcut icon" href="/portfolio/assets/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5aa8bc0de3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./assets/logo_joana.png" class="logo" alt="logo_joana">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#about">A propos</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#projets">Projets</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <div id="realisation" class="realisation">
+        <div class="container">
+            <h1 class="sub-title">Mes réalisations</h1>
+            <p class="text-realisation">Ce portfolio de mes réalisations est une vitrine de mes compétences en codage et des différents projets sur lesquels j'ai travaillé. Il a pour objectif de présenter mes créations et mon parcours en tant que développeuse.</p>
+            <div class="realisation-grid">
+                <ul class="projet-filters">
+                    <li class="grid-item"><a href="#" class="active">Tous les projets</a></li>
+                    <li class="grid-item"><a href="#">Développement web</a></li>
+                    <li class="grid-item"><a href="#">Intégration</a></li>
+                    <li class="grid-item"><a href="#">Application</a></li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <img src="https://picsum.photos/600/400?random=1" class="card-image" alt="">
+                    <div class="card-content">
+                        <h3 class="card-title">Playlist matinale</h3>
+                        <p class="category">Développement web</p>
+                    </div>
+                    <div class="card-overlay">
+                        <a href="#">+</a>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <img src="https://picsum.photos/600/400?random=2" class="card-image" alt="">
+                    <div class="card-content">
+                        <h3 class="card-title">Moteur de recherche</h3>
+                        <p class="category">Développement web</p>
+                    </div>
+                    <div class="card-overlay">
+                        <a href="#">+</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/600/400?random=3" class="card-image" alt="">
+                    <div class="card-content">
+                        <h3 class="card-title">Gallerie d'images</h3>
+                        <p class="category">Développement web</p>
+                    </div>
+                    <div class="card-overlay">
+                        <a href="#">+</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/600/400?random=4" class="card-image" alt="">
+                    <div class="card-content">
+                        <h3 class="card-title">Site agence de communication</h3>
+                        <p class="category">Développement web</p>
+                    </div>
+                    <div class="card-overlay">
+                        <a href="#">+</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/600/400?random=5" class="card-image" alt="">
+                    <div class="card-content">
+                        <h3 class="card-title">Calculatrice</h3>
+                        <p class="category">Application</p>
+                    </div>
+                    <div class="card-overlay">
+                        <a href="#">+</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/600/400?random=6" class="card-image" alt="">
+                    <div class="card-content">
+                        <h3 class="card-title">Landing page - Le RESTO</h3>
+                        <p class="category">Intégration</p>
+                    </div>
+                    <div class="card-overlay">
+                        <a href="#">+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ----------------------FOOTER-------------------- -->
+<div id="footer">
+     <div class="copyright">
+         <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 DevJoanaBureth </p>
+     </div>
+</div>
+
+
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+    
+    </script>
+
+</body>
+</html>

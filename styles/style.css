@@ -14,9 +14,9 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(./assets/backgroundv3.png);
+    background-image: url(./assets/background.webp);
     background-size: cover;
-    background-position: center;
+    background-position : center;
 }
 .container{
     padding: 10px 10%;
@@ -131,17 +131,17 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
-/* -----------------SERVICES------------- */
-#services{
+/* -----------------Skills------------- */
+#skills{
     padding: 30px 0;
 }
-.services-list{
+.skills-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     column-gap: 50px;
     margin-top: 50px;
 }
-.services-list div{
+.skills-list div{
     background: #262626;
     padding: 40px;
     font-size: 13px;
@@ -149,28 +149,28 @@ nav ul li a:hover::after{
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
-.services-list div i{
+.skills-list div i{
     font-size: 50px;
     margin-bottom: 30px;
 }
-.services-list div h2{
+.skills-list div h2{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
-.services-list div a{
+.skills-list div a{
     text-decoration: none;
     color: #fff;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
-.services-list div:hover{
+.skills-list div:hover{
     background: #b09244;
     transform: translateY(-10PX);
 }
-/* -----------------PORTFOLIO------------- */
-#portfolio{
+/* -----------------Projets------------- */
+#projets{
     padding: 50px 0;
 }
 .work-list{
@@ -298,7 +298,8 @@ form .btn2{
     cursor: pointer;
 }
 .copyright{
-    width: 100%;text-align: center;
+    width: 100%;
+    text-align: center;
     padding: 25px 0;
     background: #262626;
     font-weight: 300;
@@ -307,6 +308,8 @@ form .btn2{
 .copyright i{
     color: #b09244;
 }
+
+
 /* -----------------RESPONSIVE------------- */
 nav .fa-solid{
     display: none;

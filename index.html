@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Joana Bureth</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="/portfolio/assets/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/5aa8bc0de3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -15,8 +16,8 @@
                 <ul id="sidemenu">
                     <li><a href="#">Accueil</a></li>
                     <li><a href="#about">A propos</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projets">Projets</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
@@ -33,7 +34,7 @@
         <div class="contaier">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="./assets/user.png" alt="photo Joana">
+                    <img src="./assets/Joana.jpg" alt="photo Joana">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">A propos de moi</h1>
@@ -41,22 +42,15 @@
                         Bonjour, je m'appelle Joana Bureth et je suis actuellement en 2ème année de Bachelor en informatique à l'école de l’informatique et du numérique l’IPI. J'ai découvert le monde de l'informatique au détour d'un projet au lycée dont l'objectif était de créer un mini site. Je me suis prise de passion pour ce domaine, ce qui m'a conduit à vouloir en faire mon métier afin de devenir développeuse web.
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')" >Education</p>
+                        <p class="tab-links" onclick="opentab('interet')">Intérêts</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents active-tab" id="experience">
                         <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web development</span><br>Web App development</li>
-                            <li><span>App development</span><br>Building Android/ios apps</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2024 - Current</span><br>Bachelor 2</li>
-                            <li><span>2023 - 2024</span><br>Bachelor 1</li>
-                            <li><span>2022 - 2023</span><br>BAC</li>
+                            <li><span>2024</span><br>Création portfolio personnel</li>
+                            <li><span>2024</span><br>Création site de voyage à Porto</li>
+                            <li><span>2023-2024</span><br>Création de mini-projets</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -66,57 +60,64 @@
                             <li><span>2022 - 2023</span><br>BAC Spécialité Physique Chimie SVT </li>
                         </ul>
                     </div>
+                    <div class="tab-contents" id="interet">
+                        <ul>
+                            <li><span>Dessin / Design</span><br>Conception d'interfaces Web/Application</li>
+                            <li><span>Développement</span><br>Création de sites Web</li>
+                            <li><span>Culture asiatique</span><br>Arts, Langue, musique et civilisation</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-<!-- ----------------------SERVICES-------------------- -->
-    <div id="services">
+<!-- ----------------------Skills-------------------- -->
+    <div id="skills">
         <div class="container">
-            <h1 class="sub-title">Mes stacks</h1>
-            <div class="services-list">
+            <h1 class="sub-title">Mes compétences</h1>
+            <div class="skills-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
-                    <h2>Web Designer</h2>
+                    <h2>Langages/Base de données</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos ipsum perspiciatis inventore cupiditate sed error enim ducimus non accusamus. Eos.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop-simple"></i>
-                    <h2>UI/UX</h2>
+                    <h2>Frameworks</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsum quisquam nihil tenetur consequuntur consequatur. Aliquam aperiam velit eum dolorum.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store"></i>
-                    <h2>App Designer</h2>
+                    <h2>Outils</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis itaque distinctio beatae repellat accusamus exercitationem voluptatem rem saepe fugiat dolorem?</p>
-                    <a href="#">Learn more</a>
+                    <a href="https://github.com/DevJoanaBureth" target="_blank">Learn more</a>
                 </div>
 
             </div>
         </div>
     </div>
 
-<!-- ----------------------PORTFOLIO-------------------- -->
-     <div id="portfolio">
+<!-- ----------------------Projets-------------------- -->
+     <div id="projets">
         <div class="container">
             <h1 class="sub-title">Mes réalisations</h1>
             <div class="work-list">
                 <div class="work">
                     <img src="./assets/work-1.png" alt="">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, et quod reprehenderit laudantium eos rem in.</p>
+                        <h3>Landing page - Le RESTO</h3>
+                        <p>Présentation de la page d'accueil d'un site pour un restaurant</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="./assets/work-2.png" alt="">
                     <div class="layer">
-                        <h3>Music App</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, et quod reprehenderit laudantium eos rem in.</p>
+                        <h3>Agence de communication</h3>
+                        <p>Présentation de la page d'accueil d'un site d'agence de communication</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                        
@@ -124,14 +125,14 @@
                 <div class="work">
                     <img src="./assets/work-3.png" alt="">
                     <div class="layer">
-                        <h3>Online Shopping App</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, et quod reprehenderit laudantium eos rem in.</p>
+                        <h3>Ma playlist matinale</h3>
+                        <p>Page web de musique</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                         
                 </div>
             </div>
-            <a href="#" class="btn">voir plus</a>
+            <a href="projets.html" class="btn">voir plus</a>
         </div>
      </div>
 
@@ -148,7 +149,7 @@
                         <a href="https://www.instagram.com/fleur.dabricotier?utm_source=qr&igsh=M203YXRxMGk4bmpy"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
                     </div>
-                    <a href="./assets/CV_Joana_BURETH.pdf" download class="btn btn2">Mon CV</a>
+                    <a href="./assets/CV_Joana_BURETH.pdf" download class="btn btn2" target="_blank">Mon CV</a>
                 </div>
                 <div class="contact-right">
                     <form>
@@ -162,7 +163,7 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright <i class="fa-regular fa-copyright"></i> DevJoanaBureth </p>
+            <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 DevJoanaBureth </p>
         </div>
 
      </div>
