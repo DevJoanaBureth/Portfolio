@@ -4,6 +4,8 @@ Bienvenue dans mon repository **Portfolio** ! 🎉
 
 Je suis une jeune développeuse passionnée par le développement web et les technologies modernes. Ce portfolio est une vitrine de mes compétences en codage et des différents projets sur lesquels j'ai travaillé. Il a été entièrement conçu et développé par moi-même, avec pour objectif de présenter mes créations et mon parcours en tant que développeuse.
 
+![Capture d'écran de mon portfolio](assets/Screenshot_Portfolio.png)
+
 ## 🎯 Objectifs de ce Portfolio
 
 - Présenter mes compétences en développement web (HTML, CSS, JavaScript, PHP, etc.).
