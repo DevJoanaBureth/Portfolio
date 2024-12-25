@@ -172,6 +172,11 @@ nav ul li a:hover::after {
   margin-top: 20px;
   display: inline-block;
 }
+.skills-list img{
+  margin-top: 10px;
+  margin-right: 10px;
+  height: 30px;
+}
 .skills-list div:hover {
   background: var(--gold);
   transform: translateY(-10px);
