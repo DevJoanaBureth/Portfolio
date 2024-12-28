@@ -140,3 +140,22 @@
     }
 
     observerIntersectionAnimation();
+
+    /* Form */
+
+    document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+      
+        const serviceID = "service_aza7yuh";
+        const templateID = "template_bumpqf8";
+      
+        emailjs.sendForm(serviceID, templateID, this)
+          .then(() => {
+            alert("Message envoyé avec succès !");
+          })
+          .catch((error) => {
+            console.error("Erreur lors de l'envoi :", error);
+            alert("Une erreur s'est produite. Veuillez réessayer.");
+          });
+      });
+      
