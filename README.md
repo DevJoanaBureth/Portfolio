@@ -2,7 +2,7 @@
 
 Bienvenue dans mon repository **Portfolio** ! 🎉
 
-Je suis une jeune développeuse passionnée par le développement web et les technologies modernes. Ce portfolio est une vitrine de mes compétences en codage et des différents projets sur lesquels j'ai travaillé. Il a été entièrement conçu et développé par moi-même, avec pour objectif de présenter mes créations et mon parcours en tant que développeuse.
+Je suis une jeune développeuse passionnée par le développement web, logiciel et les technologies modernes. Ce portfolio est une vitrine de mes compétences en codage et des différents projets sur lesquels j'ai travaillé. Il a été entièrement conçu et développé par moi-même, avec pour objectif de présenter mes créations et mon parcours en tant que développeuse.
 
 ![Capture d'écran de mon portfolio](assets/Screenshot_Portfolio.png)
 
@@ -31,7 +31,7 @@ Je suis une jeune développeuse passionnée par le développement web et les tec
 - `app.js` : Fichier contenant le script JavaScript pour l'interactivité.
 - `assets/` : Dossier contenant les images et autre media pour le visuel.
 - `index.html` : Page principale de mon portfolio.
-- `styles/` : Dossier contenant les CSS pour le design.
+- `style.css et projet.css` : fichiers contenant les CSS pour le design.
 - `README.md` : Fichier contenant la description de mon projet, avec des captures d'écran et des liens.
 
 ## 🚀 Déploiement
@@ -43,9 +43,8 @@ Ce site est actuellement hébergé sur [GitHub Pages](https://devjoanabureth.git
 Si vous souhaitez en savoir plus sur moi, mes compétences, ou discuter d'une opportunité de stage, n'hésitez pas à me contacter via :
 - **Email** : brth.joana@gmail.com
 - **LinkedIn** : linkedin.com/in/joana-bureth
-- **GitHub** : github.com/DevJoanaBureth
 - **Instagram** : instagram.com/fleur.dabricotier
 
 ---
 
-Merci de visiter mon portfolio et d'explorer mes projets ! ⭐
+Merci d'avoir visité mon portfolio et d'explorer mes projets ! ⭐
