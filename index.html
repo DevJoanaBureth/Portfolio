@@ -3,27 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Joana Bureth</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="shortcut icon"
-      href="/portfolio/assets/favicon.ico"
-      type="image/x-icon"
+    <meta
+      name="description"
+      content="Portfolio de Joana BURETH, développeuse web et logiciel. Fait pour présenter mon travail, mes compétences et mes projets."
     />
+    <title>Portfolio Joana Bureth</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
     <script
+      defer
       src="https://kit.fontawesome.com/5aa8bc0de3.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="./app.js"></script>
+
+    <script
+      defer
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("e3zeutu88vDycqEMG");
+      })();
+    </script>
   </head>
   <body>
+    <div class="background"></div>
+
     <!-------------------- HEADER -------------------->
     <div id="header">
       <div class="container">
         <nav>
-          <img src="./assets/logo_joana.png" class="logo" alt="logo_joana" />
+          <img
+            src="./assets/logo_joana.png"
+            class="logo"
+            alt="Logo de Joana Bureth"
+          />
           <ul id="sidemenu">
             <li><a href="#">Accueil</a></li>
-            <li><a href="#about">A propos</a></li>
+            <li><a href="#about">À propos</a></li>
             <li><a href="#skills">Compétences</a></li>
             <li><a href="#projets">Projets</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -31,33 +56,40 @@
           </ul>
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
+
         <div class="header-text">
           <p>Développeuse web et logiciel</p>
           <h1>
-            Hello, Je suis <span>Joana</span> Bureth <br />Bienvenue sur mon
-            portfolio
+            Hello, Je suis <span>Joana</span> Bureth<br />Bienvenue sur mon
+            portfolio !
           </h1>
         </div>
       </div>
     </div>
-    <!-------------------------ABOUT-------------------->
+
+    <!-------------------- À PROPOS -------------------->
     <div id="about">
-      <div class="contaier">
+      <div class="container">
         <div class="row">
+          <!-- photo Joana -->
           <div class="about-col-1">
-            <img src="./assets/Joana.jpg" alt="photo Joana" />
+            <img src="./assets/Joana.jpg" alt="photo de Joana" />
           </div>
+
+          <!-- Texte de présentation -->
           <div class="about-col-2">
             <h1 class="sub-title">A propos de moi</h1>
             <p>
               Bonjour, je m'appelle Joana Bureth et je suis actuellement en 2ème
               année de Bachelor en informatique à l'école de l’informatique et
-              du numérique l’IPI. J'ai découvert le monde de l'informatique au
-              détour d'un projet au lycée dont l'objectif était de créer un mini
-              site. Je me suis prise de passion pour ce domaine, ce qui m'a
-              conduit à vouloir en faire mon métier afin de devenir développeuse
-              web.
+              du numérique IPI Toulouse ! J'ai découvert le monde de
+              l'informatique au détour d'un projet au lycée dont l'objectif
+              était de créer un mini site sur nos passion. Je me suis prise
+              d'attachement pour ce domaine, ce qui m'a conduit à vouloir en
+              faire mon métier afin de devenir développeuse web ou logiciel.
             </p>
+
+            <!-- menu déroulant -->
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('experience')">
                 Experience
@@ -65,17 +97,25 @@
               <p class="tab-links" onclick="opentab('education')">Education</p>
               <p class="tab-links" onclick="opentab('interet')">Intérêts</p>
             </div>
+
+            <!-- experience -->
             <div class="tab-contents active-tab" id="experience">
               <ul>
+                <li>
+                  <span>2025 - aujourd'hui</span><br />Création d'un site de
+                  gestion de container Docker
+                </li>
                 <li><span>2024</span><br />Création portfolio personnel</li>
                 <li><span>2024</span><br />Création site de voyage à Porto</li>
-                <li><span>2023-2024</span><br />Création de mini-projets</li>
+                <li><span>2023 - 2024</span><br />Création de mini-projets</li>
               </ul>
             </div>
+
+            <!-- education -->
             <div class="tab-contents" id="education">
               <ul>
                 <li>
-                  <span>2025 - 2025</span><br />Bachelor 2 - Spécialisation en
+                  <span>2024 - 2025</span><br />Bachelor 2 - Spécialisation en
                   développement d’application, de logiciels et de sites web
                 </li>
                 <li>
@@ -89,15 +129,17 @@
                 </li>
               </ul>
             </div>
+
+            <!-- interet -->
             <div class="tab-contents" id="interet">
               <ul>
                 <li>
                   <span>Dessin / Design</span><br />Conception d'interfaces
-                  Web/Application
+                  Web/Application, Maquetage
                 </li>
                 <li><span>Développement</span><br />Création de sites Web</li>
                 <li>
-                  <span>Culture asiatique</span><br />Arts, Langue, musique et
+                  <span>Culture</span><br />Arts, Langues, musiques et
                   civilisation
                 </li>
               </ul>
@@ -112,55 +154,91 @@
       <div class="container">
         <h1 class="sub-title">Mes compétences</h1>
         <div class="skills-list">
+          <!-- langages -->
           <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Langages/Base de données</h2>
+            <span>
+              <i class="fa-solid fa-code"></i>
+              <h2>Langages</h2>
+            </span>
             <img
               src="https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white"
+              alt="badge html"
             />
             <img
               src="https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white"
+              alt="badge css"
             />
             <img
               src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black"
+              alt="badge javascript"
+            />
+            <img
+              src="https://shields.io/badge/TypeScript-3178C6?style=flat&logo=TypeScript&logoColor=FFF&"
+              alt="badge typescript"
+            />
+            <img
+              src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white"
+              alt="badge jquery"
             />
             <img
               src="https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white"
+              alt="badge php"
             />
             <img
               src="https://img.shields.io/badge/Java-007396?style=flat&logo=java&logoColor=white"
+              alt="badge java"
             />
             <img
               src="https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white"
+              alt="badge sql"
             />
           </div>
+
+          <!-- Frameworks -->
           <div>
-            <i class="fa-solid fa-crop-simple"></i>
-            <h2>Frameworks</h2>
+            <span>
+              <i class="fa-solid fa-crop-simple"></i>
+              <h2>Frameworks</h2>
+            </span>
             <img
               src="https://img.shields.io/badge/Angular-DD0031?style=flat&logo=angular&logoColor=white"
+              alt="badge angular"
             />
             <img
               src="https://img.shields.io/badge/Symfony-000000?style=flat&logo=symfony&logoColor=white"
+              alt="badge symfony"
             />
           </div>
+
+          <!-- Outils -->
           <div>
-            <i class="fa-brands fa-app-store"></i>
-            <h2>Outils</h2>
+            <span>
+              <i class="fa-brands fa-app-store"></i>
+              <h2>Outils</h2>
+            </span>
             <img
               src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white"
+              alt="badge github"
             />
             <img
               src="https://img.shields.io/badge/VSCode-007ACC?style=flat&logo=visual-studio-code&logoColor=white"
+              alt="badge vscode"
+            />
+            <img
+              src="https://img.shields.io/badge/Intellij%20Idea-000?style=flat&logo=intellij-idea&"
+              alt="badge intellij-idea"
             />
             <img
               src="https://img.shields.io/badge/Figma-874fff?logo=figma&logoColor=white&logoSize=auto"
+              alt="badge figma"
             />
             <img
               src="https://img.shields.io/badge/Canva-02d9c9?logo=canva&logoColor=white&logoSize=auto"
+              alt="badge canva"
             />
             <img
               src="https://img.shields.io/badge/Microsoft-4b84d3?logo=microsoft&logoColor=white&logoSize=auto"
+              alt="badge microsoft"
             />
           </div>
         </div>
@@ -175,13 +253,14 @@
           <div class="work">
             <img src="./assets/resto.jpg" alt="restaurant" />
             <div class="layer">
-              <h3>Landing page - Le RESTO</h3>
+              <h2>Landing page - Le RESTO</h2>
               <p>
                 Présentation de la page d'accueil d'un site pour un restaurant
               </p>
               <a
                 href="https://devjoanabureth.github.io/Restaurant/"
                 target="_blank"
+                aria-label="Lien vers mon projet 'Le RESTO'"
               >
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
@@ -190,7 +269,7 @@
           <div class="work">
             <img src="./assets/agence.jpg" alt="agence de communication" />
             <div class="layer">
-              <h3>Agence de communication</h3>
+              <h2>Agence de communication</h2>
               <p>
                 Présentation de la page d'accueil d'un site d'agence de
                 communication
@@ -198,26 +277,33 @@
               <a
                 href="https://devjoanabureth.github.io/Agence-de-communication"
                 target="_blank"
+                aria-label="Lien vers mon projet 'Agence de communication'"
               >
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
           </div>
           <div class="work">
-            <img src="./assets/work-3.png" alt="" />
+            <img src="./assets/work-3.png" alt="playlist" />
             <div class="layer">
-              <h3>Ma playlist matinale</h3>
+              <h2>Ma playlist matinale</h2>
               <p>Page web de musique</p>
               <a
                 href="https://devjoanabureth.github.io/Playlist"
                 target="_blank"
+                aria-label="Lien vers mon projet 'Ma playlist matinale'"
               >
                 <i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
           </div>
         </div>
-        <a href="projets.html" class="btn">voir plus</a>
+        <a
+          href="projets.html"
+          aria-label="Aller sur la page 'projet' pour en apprendre plus sur mes projets"
+          class="btn"
+          >voir plus</a
+        >
       </div>
     </div>
 
@@ -230,14 +316,21 @@
             <p><i class="fa-solid fa-paper-plane"></i> brth.joana@gmail.com</p>
             <p><i class="fa-solid fa-square-phone"></i> 06.48.68.38.35</p>
             <div class="social-icons">
-              <a href="https://www.linkedin.com/in/joana-bureth"
+              <a
+                href="https://www.linkedin.com/in/joana-bureth"
+                aria-label="Lien vers ma page LinkedIn"
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
               <a
                 href="https://www.instagram.com/fleur.dabricotier?utm_source=qr&igsh=M203YXRxMGk4bmpy"
+                aria-label="Lien vers ma page Instagram"
                 ><i class="fa-brands fa-instagram"></i
               ></a>
-              <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+              <a
+                href="https://github.com/DevJoanaBureth"
+                aria-label="Lien vers ma page GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
             <a
               href="./assets/CV_Joana_BURETH.pdf"
@@ -267,16 +360,5 @@
         </p>
       </div>
     </div>
-
-    <script src="./app.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("e3zeutu88vDycqEMG");
-      })();
-    </script>
   </body>
 </html>

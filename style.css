@@ -3,13 +3,13 @@
   --darkGray: #555;
   --lightGray: #aaa;
   --white: #eee;
-  --gold: #b09244;
+  --gold: #b89947;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "poppins", sans-serif;
+  font-family: poppins, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -39,7 +39,7 @@ nav {
 }
 nav ul li {
   display: inline-block;
-  list-style: none;
+  /* list-style: none; */
   margin: 10px 20px;
 }
 nav ul li a {
@@ -61,6 +61,10 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
+nav ul li a:hover::after,
+nav ul li a:focus-visible::after {
+  width: 100%;
+}
 .header-text {
   margin-top: 20%;
   font-size: 30px;
@@ -75,10 +79,10 @@ nav ul li a:hover::after {
 /* -----------------ABOUT------------- */
 #about {
   padding: 80px;
-  color: var(--gris);
 }
 .row {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -86,8 +90,9 @@ nav ul li a:hover::after {
   flex-basis: 35%;
 }
 .about-col-1 img {
+  margin: auto 0;
   width: 100%;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 .about-col-2 {
   flex-basis: 60%;
@@ -156,6 +161,10 @@ nav ul li a:hover::after {
   border-radius: 10px;
   transition: background 0.5s, transform 0.5s;
 }
+.skills-list div span {
+  display: flex;
+  gap: 30px;
+}
 .skills-list div i {
   font-size: 50px;
   margin-bottom: 30px;
@@ -165,14 +174,7 @@ nav ul li a:hover::after {
   font-weight: 500;
   margin-bottom: 15px;
 }
-.skills-list div a {
-  text-decoration: none;
-  color: var(--white);
-  font-size: 12px;
-  margin-top: 20px;
-  display: inline-block;
-}
-.skills-list img{
+.skills-list img {
   margin-top: 10px;
   margin-right: 10px;
   height: 30px;
@@ -248,7 +250,7 @@ nav ul li a:hover::after {
   width: fit-content;
   border: 1px solid var(--gold);
   padding: 14px 50px;
-  border-radius: 6px;
+  border-radius: 10px;
   text-decoration: none;
   color: var(--white);
   transition: background 0.5s;
@@ -278,7 +280,7 @@ nav ul li a:hover::after {
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
-  color: var(--gris);
+  color: var(--lightGray);
   display: inline-block;
   transition: transform 0.5s;
 }
@@ -303,7 +305,7 @@ form textarea {
   margin: 15px 0;
   color: var(--white);
   font-size: 18px;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 form .btn2 {
   padding: 14px 60px;
@@ -330,7 +332,7 @@ nav .fa-solid {
 
 @media only screen and (max-width: 600px) {
   #header {
-    background-image: url(./assets/phone-background.png);
+    background-image: url(./assets/phone-background.webp);
   }
   .header-text {
     margin-top: 100%;
@@ -353,6 +355,7 @@ nav .fa-solid {
     padding-top: 50px;
     z-index: 2;
     transition: right 0.5s;
+    overflow: hidden;
   }
   nav ul li {
     display: block;
@@ -376,6 +379,16 @@ nav .fa-solid {
   }
   .about-col-2 {
     font-size: 14px;
+    max-width: 100%;
+  }
+  .skills-list div {
+    margin-bottom: 20px;
+  }
+  .skills-list div span {
+    display: block;
+  }
+  .tab-titles {
+    display: block;
   }
   .tab-links {
     font-size: 16px;
